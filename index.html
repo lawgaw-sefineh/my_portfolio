@@ -552,95 +552,98 @@
             <hr>
 
             <h3>Send Me a Message</h3>
+<form>
 
-            <form>
+    <p>
+        <label for="fullname">Full Name</label>
+        <br>
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            required>
+    </p>
 
-                <p>
+    <p>
+        <label for="email">Email Address</label>
+        <br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required>
+    </p>
 
-                    <label for="fullname">Full Name</label>
+    <p>
+        <label for="phone">Phone Number</label>
+        <br>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+251">
+    </p>
 
-                    <br>
+    <!-- NEW: Amharic Gender Radio Buttons (ፆታ) -->
+    <p>
+        <label> (Gender)</label>
+        <br>
+        <input type="radio" id="gender_male" name="gender" value="male">
+        <label for="gender_male"> (Male)</label>
+        
+        <input type="radio" id="gender_female" name="gender" value="female">
+        <label for="gender_female"> (Female)</label>
+    </p>
 
-                    <input
-                        type="text"
-                        id="fullname"
-                        name="fullname"
-                        placeholder="Enter your full name"
-                        required>
+    <p>
+        <label for="subject">Subject</label>
+        <br>
+        <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject">
+    </p>
 
-                </p>
+    <!-- NEW: Checkboxes -->
+    <p>
+        <label>Services of Interest</label>
+        <br>
+        <input type="checkbox" id="service_web" name="services" value="web_design">
+        <label for="service_web">Web Design</label>
+        
+        <input type="checkbox" id="service_consulting" name="services" value="consulting">
+        <label for="service_consulting">Consulting</label>
+        
+        <input type="checkbox" id="service_support" name="services" value="support">
+        <label for="service_support">Technical Support</label>
+    </p>
 
-                <p>
+    <p>
+        <label for="message">Message</label>
+        <br>
+        <textarea
+            id="message"
+            name="message"
+            rows="8"
+            cols="50"
+            placeholder="Write your message here..."></textarea>
+    </p>
 
-                    <label for="email">Email Address</label>
+    <p>
+        <input
+            type="submit"
+            value="Send Message">
 
-                    <br>
+        <input
+            type="reset"
+            value="Clear Form">
+    </p>
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required>
+</form>
 
-                </p>
-
-                <p>
-
-                    <label for="phone">Phone Number</label>
-
-                    <br>
-
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="+251">
-
-                </p>
-
-                <p>
-
-                    <label for="subject">Subject</label>
-
-                    <br>
-
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        placeholder="Subject">
-
-                </p>
-
-                <p>
-
-                    <label for="message">Message</label>
-
-                    <br>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="8"
-                        cols="50"
-                        placeholder="Write your message here..."></textarea>
-
-                </p>
-
-                <p>
-
-                    <input
-                        type="submit"
-                        value="Send Message">
-
-                    <input
-                        type="reset"
-                        value="Clear Form">
-
-                </p>
-
-            </form>
 
         </section>
 
